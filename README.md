@@ -1,1 +1,3 @@
-# expofp-fplan-ios-spm
+# ExpoFpFplan
+
+A description of this package.

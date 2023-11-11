@@ -1,0 +1,11 @@
+framework module ExpoFpFplan {
+  umbrella header "ExpoFpFplan.h"
+  export *
+
+  module * { export * }
+}
+
+module ExpoFpFplan.Swift {
+  header "ExpoFpFplan-Swift.h"
+  requires objc
+}
