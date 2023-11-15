@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/weichsel/ZIPFoundation", exact: "0.9.17"),
-        .package(url: "https://github.com/expofp/expofp-common-ios-spm", exact: "4.2.14"),
+        .package(url: "https://github.com/expofp/expofp-common-ios-spm", exact: "4.2.15"),
     ],
     targets: [
         .target(name: "ExpoFpFplanTarget",
