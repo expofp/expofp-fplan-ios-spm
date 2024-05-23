@@ -21,6 +21,7 @@ import _SwiftConcurrencyShims
 public struct Bookmark : Swift.Codable {
   public let name: Swift.String
   public let bookmarked: Swift.Bool
+  public init(name: Swift.String, bookmarked: Swift.Bool)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
