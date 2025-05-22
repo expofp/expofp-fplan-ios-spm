@@ -130,6 +130,8 @@ extension ExpoFpFplan.UIFplanView {
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
   @_Concurrency.MainActor @preconcurrency public func load(_ url: Swift.String, settings: ExpoFpFplan.Settings = .init())
+  @_Concurrency.MainActor @preconcurrency public func openFile(with offlinePlanInfo: ExpoFpFplan.ExpoFpOfflinePlanInfo, params: Swift.String? = nil, settings: ExpoFpFplan.Settings)
+  @_Concurrency.MainActor @preconcurrency public func openFile(htmlFilePathUrl: Foundation.URL, params: Swift.String? = nil, settings: ExpoFpFplan.Settings)
   @objc deinit
 }
 public struct FestDirectionsClickEvent : Swift.Decodable {
@@ -190,7 +192,7 @@ public struct ExpoFpOfflinePlanInfo : Swift.Equatable {
   @_Concurrency.MainActor @preconcurrency public static func preloadFile(htmlFilePathUrl: Foundation.URL, params: Swift.String? = nil, settings: ExpoFpFplan.Settings)
   @_Concurrency.MainActor @preconcurrency public static func preloadFileFromCache(params: Swift.String? = nil, settings: ExpoFpFplan.Settings)
   @_Concurrency.MainActor @preconcurrency override open func load(_ url: Swift.String, settings: ExpoFpFplan.Settings)
-  @_Concurrency.MainActor @preconcurrency open func openFile(htmlFilePathUrl: Foundation.URL, params: Swift.String? = nil, settings: ExpoFpFplan.Settings)
+  @_Concurrency.MainActor @preconcurrency override open func openFile(htmlFilePathUrl: Foundation.URL, params: Swift.String? = nil, settings: ExpoFpFplan.Settings)
   @_Concurrency.MainActor @preconcurrency open func dispose()
   @_Concurrency.MainActor @preconcurrency open func destroyView()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
