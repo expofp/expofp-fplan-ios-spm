@@ -13,15 +13,11 @@ let package = Package(
             targets: ["ExpoFpFplanTarget"]),
     ],
     dependencies: [
-        //.package(url: "https://github.com/weichsel/ZIPFoundation", exact: "0.9.19"),
-        //.package(url: "https://github.com/ZipArchive/ZipArchive.git", exact: "2.5.5"),
-        .package(url: "https://github.com/expofp/expofp-common-ios-spm", exact: "4.9.1"),
+        .package(url: "https://github.com/expofp/expofp-common-ios-spm", from: "4.9.1"),
     ],
     targets: [
         .target(name: "ExpoFpFplanTarget",
                 dependencies: [
-                    //.product(name: "ZIPFoundation", package: "ZIPFoundation"),
-                    //.product(name: "ZipArchive", package: "ZipArchive"),
                     .product(name: "ExpoFpCommon", package: "expofp-common-ios-spm"),
                     .target(name: "ExpoFpFplan")
                 ],
